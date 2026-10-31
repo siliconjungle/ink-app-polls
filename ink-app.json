@@ -1,0 +1,64 @@
+{
+  "slug": "polls",
+  "title": "Polls",
+  "repository": "https://github.com/siliconjungle/ink-app-polls",
+  "directory": "dist",
+  "entry": "index.html",
+  "backend": {
+    "entry": "server.mjs",
+    "idleSafe": true
+  },
+  "desktop": {
+    "entry": "polls",
+    "context": "self",
+    "icon": "./icon.svg",
+    "dock": false,
+    "window": {
+      "width": 820,
+      "height": 760
+    },
+    "fileTypes": [
+      ".inkpoll",
+      "application/vnd.ink.poll+json"
+    ]
+  },
+  "capabilities": [
+    "world.read",
+    "desktop.open"
+  ],
+  "commands": [
+    {
+      "id": "new-poll",
+      "title": "Create a poll…",
+      "description": "Draft a question and choose voting options.",
+      "inputs": [
+        {
+          "name": "question",
+          "label": "Question",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "handler": {
+        "type": "open"
+      }
+    },
+    {
+      "id": "search",
+      "title": "Find polls",
+      "description": "Filter the shared polls.",
+      "inputs": [
+        {
+          "name": "q",
+          "label": "Search",
+          "type": "text",
+          "required": false
+        }
+      ],
+      "handler": {
+        "type": "open"
+      }
+    }
+  ],
+  "commandsClient": "commands.mjs"
+}
