@@ -20,7 +20,13 @@
     "fileTypes": [
       ".inkpoll",
       "application/vnd.ink.poll+json"
-    ]
+    ],
+    "preview": {
+      "fileTypes": [
+        ".inkpoll",
+        "application/vnd.ink.poll+json"
+      ]
+    }
   },
   "capabilities": [
     "world.read",

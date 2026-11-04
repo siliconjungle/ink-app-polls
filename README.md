@@ -24,3 +24,7 @@ Polls are shared workspace records, not secret ballots. Questions allow 2–4 ch
 ## License
 
 MIT for app code. Bundled third-party components retain their own licenses and notices.
+
+## Quick preview
+
+Shows the question and current result counts without voting or changing a poll. Ink OS can select this reader through `desktop.preview.fileTypes`, independently of Open with. Space opens the temporary preview from a selection; Escape or Space dismisses it, and arrow keys browse the supplied item order.
